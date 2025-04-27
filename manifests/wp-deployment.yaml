@@ -86,9 +86,9 @@ spec:
       # define volume mounts here, be sure to reference
       # the PVC in your container spec
       ##
-      volumeMounts:
-        - name: wordpress-persistent-storage
-          mountPath: /var/www/mysql
+        volumeMounts:
+          - name: wordpress-persistent-storage
+            mountPath: /var/www/mysql
       volumes:
       - name: wordpress-persistent-storage
         persistentVolumeClaim:
